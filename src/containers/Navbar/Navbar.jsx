@@ -3,7 +3,7 @@ import {Logo , NavbarLinks} from "../../components"
 
 const Navbar = () => {
   return (
-    <div class="Navbar">
+    <div className="Navbar">
         <Logo/>
         <NavbarLinks/>
     </div>
