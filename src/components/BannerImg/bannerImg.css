@@ -1,0 +1,22 @@
+.BannerImg{
+    width: 1000px;
+    height: 500px;
+    z-index: 0;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    overflow-x: hidden;
+}
+
+.circles-img{
+    height: 600px;
+    width: 600px;
+    right: 300px;
+}
+
+.person-img{
+    position: absolute;
+    top: 70px;
+    right: 150px;
+    height: 450px;
+}

@@ -1,0 +1,22 @@
+.Navbarlinks{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navbarlinks a{
+    text-decoration: none;
+    color: var(--secondary-color);
+
+}
+
+.Navbarlinks button{
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-align: center;
+}

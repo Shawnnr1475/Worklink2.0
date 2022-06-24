@@ -1,11 +1,16 @@
 import './App.css';
-import Map from "./Map/Map"
+import{ SignIn, SignUp, Home, FindExpertPage, BecomeExpertPage, LoadingPage} from "./containers"
 
 function App() {
   const jobTitles = ["Painter","Tie Installer","Brick Layer", "Plumber"]
   return (
     <div className="App">
-      <Map jobTitles={jobTitles}/>
+      <LoadingPage/>
+      <Home/>
+      {/* <SignIn/>
+      <SignUp/>
+      <BecomeExpertPage/>
+      <FindExpertPage/> */}
     </div>
   );
 }

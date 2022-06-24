@@ -1,143 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 html{
-  --primary-color : rgb(66, 133, 244);
-  --secondary-color: lightblue;
-  --fontcolor:lightslategray;
-  ---btn-width: 150px;
-  overflow-x: hidden;
-}
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  position:relative
-}
-body{
-  position:relative;
+  --primary-color : #CFF4D2;
+  --secondary-color: #56C596;
+  --tertiary-color: #329D9C;
+  --white: white;
+
+  --deskopt-width: 1440px;
+  --mobile-width: 375px;
+
 }
 
-@media screen and (max-width:700px) {
-  .banner-container{
-    grid-template-columns: 1fr;
-    border-bottom-right-radius: 0;
-
-  }
-
-  .rotating-grid{
-    width: 100%;
-    height: 100%;
-  }
-  .banner-leftside{
-    z-index: 2;
-    height: 70%;
-    width: 70%;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    font-size: 90%;
-
-  }
-
-  .sign-in-btn{
-    margin-left: 20%;
-  }
-
-  .img-banner-container{
-    position: absolute;
-    height: 100%;
-    width: 100vw;
-    padding: 0;
-  }
-
-  .findworker-container{
-    grid-template-columns: 1fr;
-  }
-
-  .findworker-rightside{
-    display: flex;
-    align-items: center;
-    padding: 30px;
-  }
-
-  .img-map{
-    height: 300px;
-  }
-
-  .find-expect-btn{
-    margin-top: 20px;
-    width: 200px;
-  }
-
-  .be-expert-container{
-    grid-template-columns: 1fr;
-  }
-
-  .be-expert-rightside{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .be-expert-leftside{
-    grid-row-start:2 ;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding:100px;
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-bottom: 200px;
-    font-size: 1.1rem;
-    display: flex;
-    align-items: center;
-    padding: 30px;
-  }
-
-  .footer-container{
-    font-size: 0.9rem;
-  }
-
-  .footer-links{
-    flex-direction: column;
-
-  }
-
-  .body-row{
-    font-size: 0.9rem;
-  }
-  .full-infor-container{
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 1.5fr;
-    width: 80%;
-    height: 100%;
-  }
-  .right-full-infor{
-    overflow-y: scroll;
-  }
-
-  .right-full-infor::-webkit-scrollbar{
-    display: none;
-  }
-  .btn{
-    width: 30%;
-  }
-
-  .siginup-container{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2.5fr;
-    width: 90%;
-  }
-
-  .login-container{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
-    width: 90%;
-  }
-
-.find-expert-input{
-    transform: scale(0.8);
-    transform-origin: left;
-  }
+.btn{
+  border: none;
+  outline: none;
+  color: var(--white);
+  background-color: var(--secondary-color);
 }

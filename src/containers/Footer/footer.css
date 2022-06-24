@@ -1,0 +1,24 @@
+.Footer{
+    margin-top: 3rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--tertiary-color);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    color: var(--white);
+}
+
+.footer-logo{
+    align-self: start;
+}
+
+.footer-links{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

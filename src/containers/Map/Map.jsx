@@ -37,7 +37,7 @@ const Map = ({jobTitles})=>{
     
         });    
     return(
-        <div>
+        <div className='Map'>
             <div className='find-expert-input'>
                 <form className="find-expert-input-form-container">
                     <div className="row row-1">
