@@ -5,7 +5,8 @@
     position: relative;
     display: flex;
     justify-content: end;
-    overflow-x: hidden;
+    overflow: hidden;
+    
 }
 
 .circles-img{

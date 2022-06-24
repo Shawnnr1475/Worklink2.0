@@ -9,11 +9,11 @@ const LoadingPage = () => {
       const svgs = document.querySelector(".svgs-container")
       const loaderLogo = document.querySelector(".loading-logo")
 
-      svgs.style.animation = "fadeOut 1s forwards"
-      loader.style.animation = "fadeOut 1s forwards"
-      loaderLogo.style.animation = "fadeIn 3s 1.2s forwards"
-      loaderPage.style.animation = "pushUp 1s 4s forwards"
-      
+      svgs.style.animation = "fadeOut 0.8s forwards"
+      loader.style.animation = "fadeOut 0.8s forwards"
+      loaderLogo.style.animation = "fadeIn 2s 0.9s forwards"
+      loaderPage.style.animation = "pushUp 0.8s 2s forwards"
+
     }
   })
 

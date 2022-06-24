@@ -3,7 +3,6 @@ import{ SignIn, SignUp, Home, FindExpertPage, BecomeExpertPage, LoadingPage} fro
 
 function App() {
 
-
   const jobTitles = ["Painter","Tie Installer","Brick Layer", "Plumber"]
   return (
     <div className="App">
