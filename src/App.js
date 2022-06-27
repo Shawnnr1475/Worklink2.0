@@ -41,7 +41,9 @@ function App() {
         <Route path='/sign-up' element={<SignUp
           SignInClick={SignInClick}
         />}/>
-        <Route path='/find-expert' element={<FindExpertPage/>}/>
+        <Route path='/find-expert' element={<FindExpertPage
+          jobTitles={jobTitles}
+        />}/>
         <Route path='/become-expert' element={<BecomeExpertPage/>}/>
       </Routes>
     </div>

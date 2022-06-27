@@ -2,12 +2,10 @@ import "./findExpertPage.css"
 import { Map, SearchResults } from "../../containers"
 import { ExpertFullInfor } from "../../components"
 
-const FindExpertPage = () => {
+const FindExpertPage = ({jobTitles}) => {
   return (
     <div className="FindExpertPage">
-      {/* <Map/> */}
-      {/* <SearchResults/> */}
-      <ExpertFullInfor/>
+      <Map jobTitles={jobTitles}/>
     </div>
   )
 }

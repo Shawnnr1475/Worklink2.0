@@ -1,0 +1,6 @@
+.SearchResults{
+    z-index: 1;
+    position: absolute;
+    top: 0vh;
+    left:0rem;
+}

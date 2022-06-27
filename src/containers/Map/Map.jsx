@@ -2,6 +2,7 @@ import mapboxgl from 'mapbox-gl/dist/mapbox-gl';
 
 import {useState, useRef, useEffect} from "react"
 import "./map.css"
+import {SearchResults} from "../../containers"
  
 
 const Map = ({jobTitles})=>{
@@ -65,9 +66,10 @@ const Map = ({jobTitles})=>{
                     </div>
                 </form>
                 <div className="row row-3">
-                    <button className="find-btn" type="button">Find</button>
+                    <button className="btn" type="button">Find</button>
                 </div>
             </div>
+            <SearchResults/>
             <div ref={mapContainer} className="map-container" />
         </div>
     )
