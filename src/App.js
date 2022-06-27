@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 function App() {
-  const primaryURL = "http://localhost:3000/"
+  const primaryURL = "http://localhost:3000/" || "https://work-link.netlify.app/"
   const jobTitles = ["Painter","Tie Installer","Brick Layer", "Plumber"]
 
   const navigate = useNavigate()
