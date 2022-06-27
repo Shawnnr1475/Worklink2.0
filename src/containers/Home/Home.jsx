@@ -1,5 +1,5 @@
 import './home.css'
-import  { Navbar, Main, Footer, LoadingPage} from "../../containers"
+import  { Navbar, Main, Footer} from "../../containers"
 
 const Home = ({SignUpClick,SignInClick}) => {
   return (

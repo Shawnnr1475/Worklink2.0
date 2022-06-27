@@ -1,6 +1,6 @@
 import "./findExpertPage.css"
-import { Map, SearchResults } from "../../containers"
-import { ExpertFullInfor } from "../../components"
+import { Map} from "../../containers"
+
 
 const FindExpertPage = ({jobTitles}) => {
   return (
