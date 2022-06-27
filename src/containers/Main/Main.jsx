@@ -1,14 +1,16 @@
+
 import "./main.css"
 import {BannerImg} from "../../components"
 
-const Main = () => {
+const Main = ({SignUpClick}) => {
+
   return (
     <div className="Main">
       <div className="header">
         <div className="header-content">
           <h2>Local and skilled experts</h2>
           <p>Get skilled experts near you for your home renovations or mantaince</p>
-          <button className="btn">Sign up</button>
+          <button className="btn" onClick={SignUpClick}>Sign up</button>
         </div>
         <BannerImg/>
       </div>

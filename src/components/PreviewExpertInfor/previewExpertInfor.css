@@ -1,0 +1,42 @@
+.PreviewExpertInfor{
+    position:relative;
+    top:350px;
+    left: 30px;
+    width:200px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: 300px;
+    display: grid;
+    grid-template-rows: 1fr 1.2fr;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.profile-pic-container{
+    position: relative;
+    background-color: var(--secondary-color);
+}
+
+.infor-content h1{
+    font-size: 1rem;
+}
+
+.infor-content{
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    color: var(--tertiary-color);
+}
+
+.infor-content h2{
+    font-size: 0.8rem;
+}
+
+.infor-content h3{
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.contact-infor{
+    font-size: 0.8rem;
+}

@@ -10,6 +10,7 @@
     "mapbox-gl": "^2.8.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
     "webpack": "^5.72.0",
@@ -30,7 +31,7 @@
   },
   "browserslist": {
     "production": [
-      "defaults", 
+      "defaults",
       "not ie 11"
     ],
     "development": [

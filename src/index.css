@@ -18,4 +18,38 @@ html{
   color: var(--primary-color);
   background-color: var(--tertiary-color);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+.btn-cancel{
+  border: none;
+  outline: none;
+  color: var(--tertiary-color);
+  background:none;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+.btn:hover{
+  border: 0.1rem solid var(--tertiary-color);
+  color: var(--tertiary-color);
+  background-color: var(--primary-color);
+  font-weight: bold;
+
+}
+
+.input{
+  font-size: 1rem;
+  padding: 0 0.3rem;
+  margin-bottom: 1rem;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
 }

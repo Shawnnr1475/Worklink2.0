@@ -1,11 +1,11 @@
 import "./navbarLinks.css"
 
-const NavbarLinks = () => {
+const NavbarLinks = ({SignInClick}) => {
   return (
     <div className="Navbarlinks">
       <a href="#">Home</a>
       <a href="#">About</a>
-      <button>Sign in</button>
+      <button onClick={SignInClick}>Sign in</button>
     </div>
   )
 }
