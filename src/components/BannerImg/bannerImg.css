@@ -1,23 +1,32 @@
 .BannerImg{
-    width: 1000px;
+    max-width:400px;
     height: 500px;
-    z-index: 0;
     position: relative;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     overflow: hidden;
+
+}
+
+@media screen and (max-width:600px){
+    .BannerImg{
+        max-width: 300px;
+    }
     
 }
 
 .circles-img{
+    position: absolute;
     height: 600px;
     width: 600px;
-    right: 300px;
+    left:1%;
 }
 
 .person-img{
     position: absolute;
-    top: 70px;
-    right: 150px;
-    height: 450px;
+    top: 10%;
+    left: 25%;
+    height: 500px;
 }
+
+

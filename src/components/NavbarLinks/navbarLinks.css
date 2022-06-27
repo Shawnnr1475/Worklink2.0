@@ -1,14 +1,27 @@
 .Navbarlinks{
-    width: 25%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width:600px) {
+    .Navbarlinks{
+        display: none;
+    }
+    
 }
 
 .Navbarlinks a{
     text-decoration: none;
     color: var(--secondary-color);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
 
+}
+
+.Navbarlinks a:hover{
+    border-bottom: 0.2rem solid var(--tertiary-color);
+    color: var(--tertiary-color);
 }
 
 .Navbarlinks button{
@@ -19,4 +32,18 @@
     font-weight: bold;
     color: var(--secondary-color);
     text-align: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.Navbarlinks button:hover{
+    color: var(--tertiary-color);
+    border: 0.2rem solid var(--tertiary-color);
+    padding: 0 1em;
+    border-radius: 1em;
+}
+
+.Navbarlinks a,
+.Navbarlinks button{
+    margin-left: 15%;
 }

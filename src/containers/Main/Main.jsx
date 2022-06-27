@@ -30,7 +30,7 @@ const Main = () => {
 
       <div className="findexpert-section">
         <div className="findexpert-content">
-          <h2>Find an expert near you</h2>
+          <h3>Find an expert near you</h3>
           <p>Do you need someone to do renovations or maintaince on your home. Click the below ro find the painters, bricklayers, etc near you</p>
           <button className="btn">Find Expert</button>
         </div>
@@ -44,7 +44,7 @@ const Main = () => {
           <img src="/images/renovation.jpg" alt="" />
         </div>
         <div className="become-expert-content">
-          <h2>Become an Expert</h2>
+          <h3>Become an Expert</h3>
           <p>Are you a contructor and looking for clients near you. Join our team of experts and start working now</p>
           <button className="btn">Become an Expert</button>
         </div>

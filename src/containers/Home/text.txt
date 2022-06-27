@@ -1,0 +1,142 @@
+.Main{
+    width: min(100vw,1440px);
+    overflow-x: hidden;
+    padding: 1rem 1.5rem;
+}
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    overflow-x: hidden;
+    align-items: center;
+}
+
+.header-content{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 2rem;
+    margin-top: 5rem;
+}
+
+.header-content >h2{
+    width: 615px;
+    font-size: 60px;
+    color: var(--secondary-color);
+    line-height: 70px;
+}
+
+.header-content >p{
+    width: 500px;
+    font-size: 30px;
+    color: var(--secondary-color);
+}
+
+.header-content >button{
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+
+.fun-facts{
+    width: min(100vw,1440px);
+    height: 350px;
+    padding: 1rem 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.fact-1, .fact-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fact-1 p, .fact-2 p{
+    margin-top: 20px;
+    color: var(--tertiary-color);
+    font-size: 18px;
+    width: 300px;
+    text-align: center;
+}
+
+.fact-img-container{
+    width: 255px;
+    height: 255px;
+    border-radius: 50%;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.worker{
+    width: 230px;
+    height: 230px;
+}
+
+.findexpert-section, .become-expert-section{
+    width: 100%;
+    margin-top: 3rem;
+    padding: 1rem 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.findexpert-content, .become-expert-content{
+    padding: 0 4rem 0 2rem;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.become-expert-content{
+    height: 160px;
+}
+
+.findexpert-content > h2, .become-expert-content > h2 {
+    font-size: 30px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    width: 300px;
+}
+
+
+.findexpert-content > p, .become-expert-content > p{
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+.findexpert-content button{
+    width: 150px;
+    height: 40px;
+    border-radius: 12px;
+
+}
+
+.become-expert-content button{
+    width: 200px;
+    height: 40px;
+    border-radius: 12px;
+
+}
+
+.findexpert-img-container, .become-expert-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.findexpert-img-container > img, .become-expert-img-container > img{
+    width: 500px;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}

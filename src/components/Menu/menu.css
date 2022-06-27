@@ -1,0 +1,37 @@
+.Menu {
+    cursor: pointer;
+    display: none;
+    transform: scale(0.5);
+    transform-origin: right;
+    max-width: 100px;
+
+  }
+
+@media screen and (max-width:600px) {
+    .Menu{
+        display: block;
+    }
+    
+}
+
+.line{
+    width: 35px;
+    height: 5px;
+    background-color: var(--secondary-color);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .line1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .line2 {
+    opacity: 0;
+}
+
+.change .line3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
