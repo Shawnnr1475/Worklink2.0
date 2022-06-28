@@ -34,7 +34,7 @@ const Main = () => {
         <div className="findexpert-content">
           <h3>Find an expert near you</h3>
           <p>Do you need someone to do renovations or maintaince on your home. Click the below ro find the painters, bricklayers, etc near you</p>
-          <button className="btn">Find Expert</button>
+          <button className="btn" onClick={()=>{navigate("/find-expert")}}>Find Expert</button>
         </div>
         <div className="findexpert-img-container">
           <img src="/images/map.jpg" alt="" />
