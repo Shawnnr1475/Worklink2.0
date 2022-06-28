@@ -1,16 +1,16 @@
-
 import "./main.css"
 import {BannerImg} from "../../components"
+import { useNavigate } from "react-router-dom"
 
 const Main = () => {
-
+  let navigate = useNavigate()
   return (
     <div className="Main">
       <div className="header">
         <div className="header-content">
           <h2>Local and skilled experts</h2>
           <p>Get skilled experts near you for your home renovations or mantaince</p>
-          <button className="btn">Sign up</button>
+          <button className="btn" onClick={()=>{navigate("/sign-up")}}>Sign up</button>
         </div>
         <BannerImg/>
       </div>

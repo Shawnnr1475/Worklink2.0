@@ -18,7 +18,7 @@ function App() {
       <LoadingPage/>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/sign-in' element={<SignIn />}/>
+        <Route path='/sign-in' element={<SignIn/>}/>
         <Route path='/sign-up' element={<SignUp/>}/>
         <Route path='/find-expert' element={<FindExpertPage jobTitles={jobTitles}/>}/>
         <Route path='/become-expert' element={<BecomeExpertPage/>}/>
