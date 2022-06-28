@@ -2,6 +2,7 @@ import {useNavigate} from 'react-router-dom';
 import './App.css';
 import{ SignIn, SignUp, Home, FindExpertPage, BecomeExpertPage, LoadingPage} from "./containers"
 import {
+  BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -26,26 +27,29 @@ function App() {
   return (
     <div className="App">
         {window.location.href === primaryURL ? <LoadingPage/> :""}
-      <Routes>
-        <Route path='/' 
-        element={
-        <Home 
-          SignUpClick={SignUpClick}
-          SignInClick = {SignInClick}
-        />
-        }/>
-        <Route path='/sign-in' element={<SignIn 
-          SignUpClick={SignUpClick}
-          NavToFindExpert={NavToFindExpert}
-        />}/>
-        <Route path='/sign-up' element={<SignUp
-          SignInClick={SignInClick}
-        />}/>
-        <Route path='/find-expert' element={<FindExpertPage
-          jobTitles={jobTitles}
-        />}/>
-        <Route path='/become-expert' element={<BecomeExpertPage/>}/>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' 
+              element={
+                <Home 
+              SignUpClick={SignUpClick}
+              SignInClick = {SignInClick}
+              />
+            }/>
+            <Route path='/sign-in' element={<SignIn 
+              SignUpClick={SignUpClick}
+              NavToFindExpert={NavToFindExpert}
+            />}/>
+            <Route path='/sign-up' element={<SignUp
+              SignInClick={SignInClick}
+            />}/>
+            <Route path='/find-expert' element={<FindExpertPage
+              jobTitles={jobTitles}
+            />}/>
+            <Route path='/become-expert' element={<BecomeExpertPage/>}/>
       </Routes>
+
+        </BrowserRouter>
     </div>
   );
 }
