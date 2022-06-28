@@ -1,13 +1,11 @@
 import "./navbar.css"
 import {Logo , NavbarLinks, Menu} from "../../components"
 
-const Navbar = ({SignInClick}) => {
+const Navbar = () => {
   return (
     <div className="Navbar">
         <Logo/>
-        <NavbarLinks
-          SignInClick={SignInClick}
-        />
+        <NavbarLinks/>
         <Menu/>
     </div>
   )

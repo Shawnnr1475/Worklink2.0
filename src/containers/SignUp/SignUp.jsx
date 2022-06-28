@@ -1,6 +1,6 @@
 import "./signUp.css"
 
-const SignUp = ({SignInClick}) => {
+const SignUp = () => {
   return (
     <div className="SignUp">
       <h1>WORKLINK</h1>
@@ -13,9 +13,9 @@ const SignUp = ({SignInClick}) => {
           <input className="input" type="password" name="password" id="" placeholder="Password" />
           <input className="input" type="password" name="cpassword" id="" placeholder="Confirm password"/>
           <input className="input" type="tel" name="cell" id="" placeholder="Cell"/>
-          <p onClick={SignInClick}>I have an account</p>
+          <p>I have an account</p>
         </div>
-        <button onClick={SignInClick} type="button" className="btn">Sign in</button>
+        <button type="button" className="btn">Sign in</button>
       </form>
     </div>
   )

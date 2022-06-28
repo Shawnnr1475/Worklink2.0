@@ -1,16 +1,12 @@
 import './home.css'
 import  { Navbar, Main, Footer} from "../../containers"
 
-const Home = ({SignUpClick,SignInClick}) => {
+const Home = () => {
   return (
     <div className='Home'>
       <div>
-        <Navbar
-          SignInClick={SignInClick}
-        />
-        <Main
-          SignUpClick={SignUpClick}
-        />
+        <Navbar/>
+        <Main/>
         <Footer/>
       </div>
     </div>
