@@ -26,7 +26,7 @@ function App() {
   }
   return (
     <div className="App">
-        <BrowserRouter>
+        {/* <BrowserRouter>
           <Routes>
             <Route path='/' 
               element={
@@ -47,9 +47,9 @@ function App() {
             />}/>
             <Route path='/become-expert' element={<BecomeExpertPage/>}/>
             <Route path='*' element={<ErrorPage/>}/>
-      </Routes>
-
-        </BrowserRouter>
+          </Routes>
+        </BrowserRouter> */}
+        Hello
     </div>
   );
 }
