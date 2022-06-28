@@ -1,4 +1,4 @@
-import {useNavigate} from 'react-router-dom';
+// import {useNavigate} from 'react-router-dom';
 import './App.css';
 import{ SignIn, SignUp, Home, FindExpertPage, BecomeExpertPage, ErrorPage} from "./containers"
 import {
@@ -11,19 +11,19 @@ function App() {
   const primaryURL = "http://localhost:3000/" || "https://work-link.netlify.app/"
   const jobTitles = ["Painter","Tie Installer","Brick Layer", "Plumber"]
 
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
   
-  function SignUpClick(){
-    navigate("/sign-Up",{replace:false})
-  }
+  // function SignUpClick(){
+  //   navigate("/sign-Up",{replace:false})
+  // }
 
-  function SignInClick(){
-    navigate("/sign-in",{replace:false})
-  }
+  // function SignInClick(){
+  //   navigate("/sign-in",{replace:false})
+  // }
 
-  function NavToFindExpert(){
-    navigate("/find-expert",{replace:false})
-  }
+  // function NavToFindExpert(){
+  //   navigate("/find-expert",{replace:false})
+  // }
   return (
     <div className="App">
         {/* <BrowserRouter>
