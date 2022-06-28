@@ -26,7 +26,6 @@ function App() {
   }
   return (
     <div className="App">
-        {window.location.href === primaryURL ? <LoadingPage/> :""}
         <BrowserRouter>
           <Routes>
             <Route path='/' 
