@@ -14,7 +14,7 @@ function App() {
   const primaryURL = "http://localhost:3000/" || "https://work-link.netlify.app/"
   const jobTitles = ["Painter","Tie Installer","Brick Layer", "Plumber"]
 
-  const navigate = useNavigate()
+  let navigate = useNavigate()
   
   function SignUpClick(){
     navigate("/sign-Up",{replace:false})
