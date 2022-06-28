@@ -1,6 +1,6 @@
 import {useNavigate} from 'react-router-dom';
 import './App.css';
-import{ SignIn, SignUp, Home, FindExpertPage, BecomeExpertPage, LoadingPage} from "./containers"
+import{ SignIn, SignUp, Home, FindExpertPage, BecomeExpertPage, ErrorPage} from "./containers"
 import {
   BrowserRouter,
   Routes,
@@ -46,6 +46,7 @@ function App() {
               jobTitles={jobTitles}
             />}/>
             <Route path='/become-expert' element={<BecomeExpertPage/>}/>
+            <Route path='*' element={<ErrorPage/>}/>
       </Routes>
 
         </BrowserRouter>
