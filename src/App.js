@@ -13,7 +13,6 @@ import {
 function App() {
   const primaryURL = "http://localhost:3000/" || "https://work-link.netlify.app/"
   const jobTitles = ["Painter","Tie Installer","Brick Layer", "Plumber"]
-
   let navigate = useNavigate()
   
   function SignUpClick(){
