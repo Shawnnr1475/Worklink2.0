@@ -1,8 +1,9 @@
 {
   "name": "worklink2.0",
   "version": "0.1.0",
-  "homepage": "https://work-link.netlify.app/",
+  "homepage": "https://work-link.netlify.app",
   "private": true,
+  "proxy": "https://work-link.netlify.app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
