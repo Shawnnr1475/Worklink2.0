@@ -5,3 +5,5 @@ export { default as PreviewExpertInfor } from "./PreviewExpertInfor/PreviewExper
 export { default as BannerImg } from "./BannerImg/BannerImg";
 export { default as Menu } from "./Menu/Menu";
 export { default as ExpertFullInfor } from "./ExpertFullInfor/ExpertFullInfor";
+export { default as AddProfilePic } from "./AddProfilePic/AddProfilePic";
+export { default as InputAutoComplete } from "./InputAutoComplete/InputAutoComplete";
