@@ -5,7 +5,7 @@
     background: url("../../../public/images/bg.png") no-repeat;
     background-size: cover;
     background-position: center;
-    display:none;
+    display:flex;
     justify-content: center;
 }
 

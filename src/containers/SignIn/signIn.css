@@ -70,7 +70,7 @@
     color: var(--tertiary-color);
 }
 
-.sign-form-container button{
+.sign-in-form-container button{
     margin-top: 2.5rem;
     align-self: center;
     width: 7rem;

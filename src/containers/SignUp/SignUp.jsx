@@ -1,6 +1,8 @@
 import "./signUp.css"
+import { useNavigate } from "react-router-dom"
 
 const SignUp = () => {
+  const navigate = useNavigate()
   return (
     <div className="SignUp">
       <h1>WORKLINK</h1>
@@ -13,9 +15,9 @@ const SignUp = () => {
           <input className="input" type="password" name="password" id="" placeholder="Password" />
           <input className="input" type="password" name="cpassword" id="" placeholder="Confirm password"/>
           <input className="input" type="tel" name="cell" id="" placeholder="Cell"/>
-          <p>I have an account</p>
+          <p onClick={()=>{navigate("/sign-in")}}>I have an account</p>
         </div>
-        <button type="button" className="btn">Sign in</button>
+        <button type="button" className="btn" onClick={()=>{navigate("/sign-in")}}>Sign up</button>
       </form>
     </div>
   )

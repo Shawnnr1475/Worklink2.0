@@ -8,14 +8,13 @@ const LoadingPage = () => {
       const loader = document.querySelector(".loader-container")
       const svgs = document.querySelector(".svgs-container")
       const loaderLogo = document.querySelector(".loading-logo")
-      const home = document.querySelector(".Home")
+
 
       svgs.style.animation = "fadeOut 0.8s forwards"
       loader.style.animation = "fadeOut 0.8s forwards"
       loaderLogo.style.animation = "fadeIn 2s 0.9s forwards"
       loaderPage.style.animation = "pushUp 0.8s 2s forwards"
 
-      setTimeout(()=>{ home.style.display = "flex"},2000)
     }
   })
 
