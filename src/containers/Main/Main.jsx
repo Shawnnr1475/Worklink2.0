@@ -48,7 +48,7 @@ const Main = () => {
         <div className="become-expert-content">
           <h3>Become an Expert</h3>
           <p>Are you a contructor and looking for clients near you. Join our team of experts and start working now</p>
-          <button className="btn">Become an Expert</button>
+          <button className="btn" onClick={()=>{navigate("/become-expert")}}>Become an Expert</button>
         </div>
       </div>
     </div>

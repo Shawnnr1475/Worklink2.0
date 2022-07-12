@@ -1,0 +1,36 @@
+.AddProfilepic{
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+.input-img{
+    width: 0;
+    height: 0;
+}
+.img-container{
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.ppic-img{
+    width: 10rem;
+    height: 10rem;
+}
+
+.img-container svg{
+    fill: gray;
+    width: 4rem;
+    height: 4rem;
+}
