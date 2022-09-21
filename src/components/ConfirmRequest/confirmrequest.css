@@ -1,4 +1,4 @@
-.ExpertFullInfor{
+.ConfirmRequest{
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@
 
 }
 
-.expert-full-infor{
+.confirm-request{
     width: 70%;
     box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
     display: grid;
@@ -22,70 +22,73 @@
     background-color: white;
     min-width: 300px;
     border-radius: 1rem;
+    
 }
 
-.full-infor-left{
+.confirm-request-left{
     background-color: var(--secondary-color);
     min-height: 15rem;
     position: relative;
+    padding: 0.5rem;
 }
 
-.full-profile-pic-container{
+
+.confirm-profile-pic-container{
     width: 100%;
     height: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+
+    justify-items: center;
     justify-content: center;
-    align-items: center;
+    height: 100%;
 }
 
-.full-profile-pic-container img{
-    width: 200px;
-    height: 200px;
+.confirm-profile-pic-container img{
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
+    align-self: center;
 }
 
-.full-infor-right{
+.confrim-expert-details{
+    font-size: 0.5rem;
+    color: white;
+    margin-top: 1rem;
+    height: fit-content;
+    align-self: center;
+}
+
+
+.confirm-request-right{
     padding: 1rem;
     color: var(--tertiary-color);
-}
-
-.full-infor-content h1{
-    font-size: 1.2rem;
-    margin-bottom: 0.7em
-}
-
-.full-infor-content h2{
-    font-size: 1.1rem;
-    margin-bottom: 0.7em
-}
-
-.full-infor-content h3{
     font-size: 1rem;
-    margin-bottom: 0.7em;
+}
+
+.confirm-request-right h1{
+    font-size: 1rem;
 }
 
 
-.full-infor-btn-container{
-    margin-top: 2rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.full-infor-btn-container > .btn-cancel{
-    width: 5rem;
-    border-radius: 1em;
-}
-
-.full-infor-btn-container > .btn{
-    width: 8rem;
-    border-radius: 1em;
-}
 
 @media screen and (min-width:600px) {
-    .expert-full-infor{
+
+    .confirm-request{
         grid-template-columns: 1fr 1.2fr;
         width: 50%;
         min-width: 600px;
+    }
+
+    .confirm-profile-pic-container{
+        grid-template-columns: 1fr;
+    }
+
+    .confirm-profile-pic-container img{
+        align-self: end;
+    }
+
+    .confirm-expert-details{
+        align-self: start;
     }
 }

@@ -5,7 +5,7 @@ import "./map.css"
 import {SearchResults} from "../../containers"
  
 
-const Map = ({jobTitles})=>{
+const Map = ({jobTitles,setShowFullInfor})=>{
     mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
     const mapContainer = useRef(null);
     const map = useRef(null);
@@ -69,7 +69,7 @@ const Map = ({jobTitles})=>{
                     <button className="btn" type="button">Find</button>
                 </div>
             </div>
-            <SearchResults/>
+            <SearchResults setShowFullInfor= {setShowFullInfor}/>
             <div ref={mapContainer} className="map-container" />
         </div>
     )

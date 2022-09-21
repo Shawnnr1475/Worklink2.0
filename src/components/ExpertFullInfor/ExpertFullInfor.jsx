@@ -1,12 +1,17 @@
 import "./expertFullInfor.css"
 
-const ExpertFullInfor = () => {
+const ExpertFullInfor = ({setShowFullInfor,setShowRequestJob}) => {
+  const RequestClick = ()=>{
+    setShowRequestJob(true)
+    setShowFullInfor(false)
+  }  
+
   return (
     <div className="ExpertFullInfor">
         <div className="expert-full-infor">
             <div className="full-infor-left">
                 <div className="full-profile-pic-container">
-                    <img src="" alt="" />  
+                    <img src="https://avatars1.githubusercontent.com/u/35249164?height=180&v=4&width=180" alt="" />  
                 </div>
             </div>
             <div className="full-infor-right">
@@ -20,8 +25,8 @@ const ExpertFullInfor = () => {
                     <h3>Email</h3>
                 </div>
                 <div className="full-infor-btn-container">
-                    <button className="btn-cancel">Cancel</button>
-                    <button className="btn">Request a Job</button>
+                    <button type="button" className="btn-cancel" onClick={()=>{setShowFullInfor(false)}}>Cancel</button>
+                    <button className="btn" onClick={()=>{RequestClick()}}>Request a Job</button>
                 </div>
             </div>
         </div>

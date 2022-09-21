@@ -1,0 +1,99 @@
+.RequestJob{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    background-color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.request-job{
+    width: 70%;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template: 1fr;
+    overflow: hidden;
+    background-color: white;
+    min-width: 300px;
+    border-radius: 1rem;
+}
+
+.request-job-left{
+    background-color: var(--secondary-color);
+    min-height: 15rem;
+    position: relative;
+    padding: 0.5rem;
+}
+
+.request-profile-pic-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+
+    justify-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.request-profile-pic-container img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.request-expert-details{
+    font-size: 0.5rem;
+    color: white;
+    margin-top: 1rem;
+    height: fit-content;
+    align-self: center;
+}
+
+.request-job-right{
+    padding: 1rem;
+    color: var(--tertiary-color);
+}
+
+.request-job-right h2{
+    font-size: var(--font-size);
+}
+
+.request-job-right textarea{
+    margin-top: 1rem;
+    border: none;
+    outline:none;
+    font-family: var(--font);
+    font-size: 1rem;
+    width: 100%;
+    height: 250px;
+    cursor: pointer;
+}
+
+@media screen and (min-width:600px) {
+
+    .request-job{
+        grid-template-columns: 1fr 1.2fr;
+        width: 50%;
+        min-width: 600px;
+    }
+
+    .request-profile-pic-container{
+        grid-template-columns: 1fr;
+    }
+
+    .request-profile-pic-container img{
+        align-self: end;
+    }
+
+    .request-expert-details{
+        align-self: start;
+    }
+}

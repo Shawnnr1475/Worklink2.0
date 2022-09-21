@@ -7,3 +7,5 @@ export { default as Menu } from "./Menu/Menu";
 export { default as ExpertFullInfor } from "./ExpertFullInfor/ExpertFullInfor";
 export { default as AddProfilePic } from "./AddProfilePic/AddProfilePic";
 export { default as InputAutoComplete } from "./InputAutoComplete/InputAutoComplete";
+export { default as RequestJob } from "./RequestJob/RequestJob";
+export { default as ConfirmRequest } from "./ConfirmRequest/ConfirmRequest";

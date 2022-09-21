@@ -1,10 +1,10 @@
 import "./searchResults.css"
 import { PreviewExpertInfor } from "../../components"
 
-const SearchResults = () => {
+const SearchResults = ({setShowFullInfor}) => {
   return (
     <div className="SearchResults">
-        <PreviewExpertInfor/>
+        <PreviewExpertInfor setShowFullInfor ={setShowFullInfor}/>
     </div>
   )
 }
