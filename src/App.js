@@ -1,17 +1,26 @@
-import React from 'react';
 import './App.css';
 import{ SignIn, SignUp, Home, FindExpertPage, BecomeExpertPage, ErrorPage,LoadingPage} from "./containers"
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  useNavigate
-} from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
+import {useEffect} from "react"
 
 
 
 function App() {
-  const primaryURL = "http://localhost:3000/" || "https://work-link.netlify.app/"
+  useEffect(()=>{
+    const fetchClients = async()=>{
+      console.log(process.env.REACT_APP_BASE_URL + "/clients")
+      try{
+        const res = await fetch(process.env.REACT_APP_BASE_URL + "/clients")
+        const data = await res.json()
+        console.log(data)
+
+      }
+      catch(e){
+        console.log(e)
+      }
+    }
+    fetchClients()
+  },[])
   const jobTitles = ["Painter","Tie Installer","Brick Layer", "Plumber"]
   return (
     <div className="App">
