@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 .env
+/worklink2.0_backend
 
 # testing
 /coverage
