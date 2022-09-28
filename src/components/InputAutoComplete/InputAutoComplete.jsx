@@ -18,8 +18,6 @@ const InputAutoComplete = () => {
     data.features.map(feature=>{
         const coordinate = feature.geometry.coordinates
         const place_name = feature.place_name
-        console.log(coordinates, place_name)
-
         const address = {
             name_place : place_name,
             coordinate : coordinate
