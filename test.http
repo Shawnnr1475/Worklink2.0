@@ -1,16 +1,7 @@
-POST https://wl2api.herokuapp.com/client/register
+POST http://localhost:5000/client/signin
 Content-Type: application/json
 
 {
-    "name": "hawn",
-    "surname": "uiwiksak",
-    "email": "radeejk@jsja.com",
-    "address": "inputs[3].value",
-    "coordinates": [334,556],
-    "password": "inputs[6].value",
-    "cell":"inputs[7].value"
+    "email": "jacobss@gmail.com",
+    "password": "12345"
 }
-
-###
-
-GET https://wl2api.herokuapp.com/experts
