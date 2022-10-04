@@ -16,6 +16,12 @@ const SignIn = () => {
       if (response.status === 200){
         navigate("/find-expert")
       }
+      else if (response.status === 401){
+        console.log(response)
+      }
+      else if(response.status === 404){
+        console.log(response)
+      }
     })
     .catch(function (error) {
       console.log(error);
