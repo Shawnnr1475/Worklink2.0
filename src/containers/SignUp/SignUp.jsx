@@ -4,7 +4,7 @@ import { InputAutoComplete } from "../../components"
 
 const SignUp = () => {
   const navigate = useNavigate()
-  
+  const axios = require('axios').default;
   
   function getDataFromInputs(){
     const inputs = document.querySelectorAll("input")
@@ -27,20 +27,15 @@ const SignUp = () => {
 
   async function SignUpClick(){
     const data = getDataFromInputs()
-    await fetch(process.env.REACT_APP_BASE_URL+"/client/register",{
-      method : "POST",
-      headers:{
-        "Content-type":"application/json"
-      },
-      mode: "no-cors",
-      body : JSON.stringify(data)
-    }).then(res=>{
-      res.json()
+    await axios.post(process.env.REACT_APP_BASE_URL+'/client/register', data)
+    .then(function (response) {
+      if (response.status === 200){
+        navigate("/sign-in")
+      }
     })
-    .then(result=>{console.log(result)})
-    .catch(err=>{
-      console.log(err)
-    })
+    .catch(function (error) {
+      console.log(error);
+    });
   }
   return (
     <div className="SignUp">
@@ -48,13 +43,13 @@ const SignUp = () => {
       <form className="sign-up-form-container">
         <h2>Sign Up</h2>
         <div className="inputs sign-up">
-          <input className="input" type="text" name="firstname" id="" placeholder="Firstname" />
-          <input className="input" type="text" name="surname" id="" placeholder="Surname" />
-          <input className="input" type="email" name="email" id="" placeholder="Email" />
+          <input className="input" type="text" name="firstname" placeholder="Firstname" />
+          <input className="input" type="text" name="surname" placeholder="Surname" />
+          <input className="input" type="email" name="email" placeholder="Email" />
           <InputAutoComplete/>
-          <input className="input" type="password" name="password" id="" placeholder="Password" />
-          <input className="input" type="password" name="cpassword" id="" placeholder="Confirm password"/>
-          <input className="input" type="tel" name="cell" id="" placeholder="Cell"/>
+          <input className="input" type="password" name="password" placeholder="Password" />
+          <input className="input" type="password" name="cpassword" placeholder="Confirm password"/>
+          <input className="input" type="tel" name="cell" placeholder="Cell"/>
           <p onClick={()=>{navigate("/sign-in")}}>I have an account</p>
         </div>
         <button type="button" className="btn" onClick={()=>{SignUpClick()}}>Sign up</button>
