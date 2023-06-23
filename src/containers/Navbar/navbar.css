@@ -1,6 +1,6 @@
 .Navbar{
     width: 100%;
-    max-width: 1440px;
+    max-width: 1920px;
     padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
@@ -11,5 +11,6 @@
     top: 0;
     z-index: 2;
     background-color: var(--primary-color);
+    overflow:hidden
 }
 

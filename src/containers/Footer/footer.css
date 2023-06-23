@@ -1,6 +1,6 @@
 .Footer{
     width: 100%;
-    max-width: 1440px;
+    max-width: 19200px;
     margin-top: 2rem;
     padding: 1rem 2rem;
     background-color: var(--tertiary-color);
@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     color: var(--primary-color);
-
+    overflow:hidden
 }
 
 .footer-logo h3{

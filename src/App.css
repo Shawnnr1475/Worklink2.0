@@ -8,11 +8,12 @@
   body{
     position:relative;
     width: 100vw;
+    max-width: 1920px;
     height: 100%;
   }
 
   .container-width{
-    width: 100vw;
+    width: 100%;
     max-width: var(--destop-width);
     padding: 1rem 1.5rem;
     overflow: hidden;
