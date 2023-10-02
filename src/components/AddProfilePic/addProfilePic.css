@@ -20,7 +20,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: lightgrey;
+    background-color: var( --secondary-color);
     cursor: pointer;
 }
 

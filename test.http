@@ -1,7 +1,0 @@
-POST https://wl2api.herokuapp.com/client/signin
-Content-Type: application/json
-
-{
-    "email": "jacobsp@gmail.com",
-    "password": "1345"
-}
